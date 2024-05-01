@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  max-width: 100%;
+  border-radius: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  padding: 10px;
+  max-width: 600px;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  display : flex;
+  justify-content: space-between;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 2rem;
+}
+header a.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+header nav {
   display: flex;
-  flex-direction: column;
+  gap: 1rem;
+  font-weight: bold;
+  color: rgb(77, 77, 77);
+}
+div.post {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  position: relative;
+  height: 21rem;
+}
+div.post div.text h2{
+  display: flex;
+  margin: 0;
+  margin-bottom: -0.75rem;
+  font-size: 1.3rem;
+  color: red;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+div.post div.text .summary{
+  display: flex;
+  margin: 0;
+  font-size: 1rem;
+  align-items:center;
+  justify-content:center;
+  text-align: justify;
+  text-indent: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+div.emoji-container {
+  width: 42%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  bottom: 0.1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.emoji {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50%;
+  padding: 0 0.3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(77,77,77);
+}
+
+.heart {
+  color: red;
+  font-size: 1.9rem;
+}
+.comment-block, .visit-block {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: rgb(77,77,77);
+}
+
+.author {
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(77,77,77);
 }
