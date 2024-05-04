@@ -1,26 +1,45 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
   background-color: #f4f4f4;
+  background-color: aqua;
+  max-width: 600px;
+  margin: 0 auto;
+
 }
 img {
   max-width: 100%;
   border-radius: 5px;
 }
-main {
+.main {
   padding: 10px;
   max-width: 600px;
   margin: 0 auto;
+  background-color: orange;
+}
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+  color: red;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 header {
   display : flex;
   justify-content: space-between;
+  color: blueviolet;
 }
 header a {
   text-decoration: none;
   color: inherit;
   margin-bottom: 2rem;
+  color: red;
 }
 header a.logo {
   font-size: 1.5em;
@@ -61,6 +80,22 @@ div.post div.text .summary{
   justify-content:center;
   text-align: justify;
   text-indent: 0.5rem;
+}
+
+div.post p.info {
+  margin: 6px 0;
+  color: #888;
+  font-size: 7rem;
+  font-weight: bold;
+  display: flex;
+  gap:10px;
+}
+div.post p.info a.author {
+  color: #5107a6;
+}
+div.post p.summary {
+  margin: 10px 0;
+  line-height: 1.15rem;
 }
 
 div.emoji-container {
@@ -107,4 +142,44 @@ div.emoji {
   font-weight: bold;
   font-size: 1rem;
   color: rgb(77,77,77);
+}
+
+time {
+  font-size: 0.9rem;
+  color: rgb(77,77,77);
+}
+
+form.login, form.register {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #777;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
 }
